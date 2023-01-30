@@ -16,7 +16,7 @@
     var url = new URL(hash['Endpoint']);
     var host = url.pathname.slice(2, url.pathname.length - 1);
 
-    var amqp_conn = `amqps://${encodeURIComponent(hash['SharedAccessKeyName'])}:${encodeURIComponent(hash['SharedAccessKey'])}@${host}:5671/?sasl=plain`;
+    var amqp_conn = amqps//%(SharedAccessKeyName)s:%(SharedAccessKey)s@%(host)s:5671/?sasl=plain
     return amqp_conn
   }
 
